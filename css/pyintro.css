@@ -1,0 +1,35 @@
+#console{
+    background:#000;
+    height:480px;
+    width:100%;
+    top:0px;
+    left:0px;
+    position:fixed;
+    z-index:999;
+    display:none;
+    color:#fff;
+    text-align:left;
+}
+
+.icon {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0px !important;
+    box-shadow: 0 0 0 !important;
+    -webkit-box-shadow: 0 0 0 !important;
+    -mozilla-box-shadow: 0 0 0 !important;
+    background-color: rgba(255, 255,255,0.0) !important;
+    vertical-align:top;
+}
+
+td {
+    padding-right: 16px;
+    min-width: 200px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 10px;
+    font-size: 12px;
+    line-height: 14px;
+}

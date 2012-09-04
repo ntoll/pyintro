@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>An Introduction to Python ~ PyconUK 2012</title>
+        <meta name="description" content=""/>
+        <meta name="author" content="Nicholas H.Tollervey"/>
+        <meta name="author" content="John Pinner"/>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <link href='assets/fonts/Lato' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/print.css" type="text/css" media="print">
+        <link rel="stylesheet" href="lib/github.css">
+        <link rel="stylesheet" href="css/pyintro.css">
+    </head>
+    <body>
+        <div id="console">
+            <iframe style="width: 100%; height: 480px; border: none;"
+                name="embedded_python_anywhere"
+                src="https://www.pythonanywhere.com/embedded/">
+            </iframe>
+        </div>
+        <div class="reveal">
+            <div class="state-background"></div>
+            <div class="slides">
+                <section>
+                    <h1>Introducing Python</h1>
+                    <p><img src="assets/images/snakes.png"/></p>
+                    <p>
+                        <i>
+                            <small>Nicholas H.Tollervey</small>
+                            <a href="http://ntoll.org">
+                            <small>
+                                <img src="assets/images/home.png" class="icon"/>
+                                ntoll.org
+                            </small></a>
+                            <small>/</small>
+                            <a href="mailto:ntoll@ntoll.org?subject=Hi%20there!&body=Hey%20Nicholas,">
+                            <small>
+                                <img src="assets/images/email.png" class="icon"/>
+                                ntoll@ntoll.org
+                            </small>
+                            </a>
+                            <small>/</small>
+                            <a href="http://twitter.com/ntoll">
+                            <small>
+                                <img src="assets/images/twitter.png" class="icon"/>
+                                @ntoll
+                            </small>
+                            </a>
+                        </i>
+                    </p>
+                    <p>
+                        <i>
+                            <small>John Pinner</small>
+                            <a href="http://www.clocksoft.com/">
+                            <small>
+                                <img src="assets/images/home.png" class="icon"/>
+                                clocksoft.com
+                            </small></a>
+                            <small>/</small>
+                            <a href="mailto:funthyme@gmail.com?subject=Hi%20there!&body=Hey%20John,">
+                            <small>
+                                <img src="assets/images/email.png" class="icon"/>
+                                funthyme@gmail.com
+                            </small>
+                            </a>
+                            <small>/</small>
+                            <a href="http://twitter.com/JohnPinner">
+                            <small>
+                                <img src="assets/images/twitter.png" class="icon"/>
+                                @JohnPinner
+                            </small>
+                            </a>
+                        </i>
+                    </p>
+                    <script>
+                        if( navigator.userAgent.match( /(iPhone|iPad|iPod|Android)/i ) ) document.write( '<p style="color: rgba(0,0,0,0.3); text-shadow: none;">('+'Tap to navigate'+')</p>' );
+                    </script>
+                    <div class="footer">Press space to move forward, or use
+                    the arrow keys. Some slides are two dimensional so
+                    use the up and down arrows. The compass on the right
+                    shows available directions.</div>
+                </section>
+            </div>
+            <aside class="controls" style="display: block;">
+                <a class="left" href="#">&#x25C4;</a>
+                <a class="right" href="#">&#x25BA;</a>
+                <a class="up" href="#">&#x25B2;</a>
+                <a class="down" href="#">&#x25BC;</a>
+            </aside>
+
+            <div class="progress"><span></span></div>
+        </div>
+        <!-- Optional libraries for code syntax highlighting and classList support in IE9 -->
+        <script src="lib/highlight.js"></script>
+        <script src="lib/classList.js"></script>
+        <script src="js/reveal.min.js"></script>
+        <script src="js/jquery.js"></script>
+        <script>
+            Reveal.initialize({
+                // Display controls in the bottom right corner
+                controls: true,
+
+                // Display a presentation progress bar
+                progress: true,
+
+                // If true; each slide will be pushed to the browser history
+                history: true,
+
+                // Loops the presentation, defaults to false
+                loop: false,
+
+                // Flags if mouse wheel navigation should be enabled
+                mouseWheel: false,
+
+                // Apply a 3D roll to links on hover
+                rollingLinks: false,
+
+                // UI style
+                theme: 'default',
+
+                // Transition style
+                transition: 'linear'
+            });
+            hljs.initHighlightingOnLoad();
+            $(window).keypress(function(e) {
+                if(e.which === 96 || e.which === 126) {
+                    $('#console').slideToggle();
+                }
+            });
+        </script>
+    </body>
+</html>
