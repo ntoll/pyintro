@@ -17,10 +17,10 @@
     </head>
     <body>
         <div id="console">
-            <iframe style="width: 100%; height: 480px; border: none;"
+            <!--iframe style="width: 100%; height: 480px; border: none;"
                 name="embedded_python_anywhere"
                 src="https://www.pythonanywhere.com/embedded/">
-            </iframe>
+            </iframe-->
         </div>
         <div class="reveal">
             <div class="state-background"></div>
@@ -36,14 +36,12 @@
                                 <img src="assets/images/home.png" class="icon"/>
                                 ntoll.org
                             </small></a>
-                            <small>/</small>
                             <a href="mailto:ntoll@ntoll.org?subject=Hi%20there!&body=Hey%20Nicholas,">
                             <small>
                                 <img src="assets/images/email.png" class="icon"/>
                                 ntoll@ntoll.org
                             </small>
                             </a>
-                            <small>/</small>
                             <a href="http://twitter.com/ntoll">
                             <small>
                                 <img src="assets/images/twitter.png" class="icon"/>
@@ -60,14 +58,12 @@
                                 <img src="assets/images/home.png" class="icon"/>
                                 clocksoft.com
                             </small></a>
-                            <small>/</small>
                             <a href="mailto:funthyme@gmail.com?subject=Hi%20there!&body=Hey%20John,">
                             <small>
                                 <img src="assets/images/email.png" class="icon"/>
                                 funthyme@gmail.com
                             </small>
                             </a>
-                            <small>/</small>
                             <a href="http://twitter.com/JohnPinner">
                             <small>
                                 <img src="assets/images/twitter.png" class="icon"/>
@@ -83,6 +79,168 @@
                     the arrow keys. Some slides are two dimensional so
                     use the up and down arrows. The compass on the right
                     shows available directions.</div>
+                </section>
+                <section>
+                    <section>
+                        <h1>Why Python..?</h1>
+                        <ul>
+                            <li class="fragment">Easy to learn</li>
+                            <li class="fragment">Batteries included</li>
+                            <li class="fragment">Widely adopted</li>
+                            <li class="fragment">Great community</li>
+                            <li class="fragment">FUN!</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h1>Plan for today...</h1>
+                        <ol>
+                            <li class="fragment">Representing Things (data structures)</li>
+                            <li class="fragment">Doing Stuff (procedural programming)</li>
+                        </ol>
+                    </section>
+                    <section>
+                        <h1>But first...</h1>
+                        <div class="fragment">
+                            <h2>Who are you?</h2>
+                            <ul>
+                                <li>Your name</li>
+                                <li>An interest</li>
+                            </ul>
+                            <div>
+                            <br/>
+                            <h2>(Are we all set up..?)</h2>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <section>
+                    <h1>Representing Things</h1>
+                    <h2>(data structures)</h2>
+                </section>
+                <section>
+                    <h2>Naming things</h2>
+                    <pre class="big"><code contenteditable class="python">
+    >>> name = 'Nicholas'
+    >>> age = 21
+    >>> male = True
+    >>> quotation = 'My hovercraft is full of eels'
+    >>> name
+    'Nicholas'
+    >>> age
+    21
+    >>> male
+    True
+    >>> quotation
+    'My hovercraft is full of eels'
+                    </code></pre>
+                    <p>Use the equals (=) sign to assign a value to a
+                    variable.</p>
+                </section>
+                <section>
+                    <h2>Simple things</h2>
+                    <pre class="big"><code class="python">
+    # This is a comment (ignored by Python)
+    'This is a string (of characters)'
+    "This is also a string"
+    # This is a number
+    123456789
+    # So is this...
+    1.23456789
+    # This is a true value
+    True
+    # ... and this is false
+    False
+    # Finally,
+    None
+    # ... is used to mean unknown (null or nil in other languages)
+    # Simple huh..?
+                    </code></pre>
+                    <p>Try to assign some values to variables.</p>
+                    <p>Just type in the name of the variable to see its value.</p>
+                </section>
+                <section>
+                    <h2>Lists (of simple things)</h2>
+                    <pre class="big"><code class="python">
+    >>> shopping_list = ['ham', 'eggs', 'fruit', 'milk']
+    >>> shopping_list
+    ['ham', 'eggs', 'fruit', 'milk']
+                    </code></pre>
+                    <p>Lists remain in order.</p>
+                    <div class="fragment">
+                    <pre class="big"><code class="python">
+    >>> shopping_list[0]
+    'ham'
+    >>> shopping_list[3]
+    'milk'
+    >>> shopping_list[4]
+    Traceback (most recent call last):
+    File "<stdin>", line 1, in <module>
+    IndexError: list index out of range
+                    </code></pre>
+                    <p>Refer to an item by its index. Python counts from 0 (zero).</p>
+                    <p>If you index the wrong thing you get an error.</p>
+                    </div>
+                </section>
+                <section>
+                    <h2>Lists Can Contain Anything</h2>
+                    <pre class="big"><code class="python">
+    >>> random_junk = ['foo', 1.234, False, ['hello', 'world']]
+    >>> random_junk
+    ['foo', 1.234, False, ['hello', 'world']]
+    >>> random_junk[0]
+    'foo'
+    >>> random_junk[3]
+    ['hello', 'world']
+    >>> random_junk[3][0]
+    ???
+                    </code></pre>
+                    <p>Create a wish list of birthday presents.</p>
+                    <p>(Try to get specific items from the list.)</p>
+                </section>
+                <section>
+                    <h2>Dictionaries of keys & values</h2>
+                    <pre class="big"><code class="python">
+    >>> me = {
+    ... 'name': 'Nicholas Tollervey',
+    ... 'age': 39,
+    ... 'languages': ['Python', 'Javascript', 'C#', 'Visual Basic', 'Lisp']
+    ... }
+    >>> me['name']
+    'Nicholas Tollervey'
+    >>> me['age']
+    39
+    >>> me['languages'][0]
+    'Python'
+                    </code></pre>
+                    <p>A "dict" contains named attributes. Reference each
+                    attribute by its key to get the associated value. Create
+                    a dict that represents <em>you</em> (don't just use the
+                    attributes that I do).</p>
+                </section>
+                <section>
+                    <h2>Solo Exercise!</h2>
+                    <img src="assets/images/YouTwitFace.png" alt="YouTwitFace"/>
+                    <p>We're building a new social network! We need
+                    you to work out how to represent its members/users:</p>
+                    <ul>
+                        <li>Decide a simple dict schema to represent users (name, age etc).</li>
+                        <li>Create a handful of members using this schema.</li>
+                        <li>Add these members to a list.</li>
+                    </ul>
+                    &nbsp;<br/>
+                    <p>Discuss with your neighbours, ask for help and experiment!</p>
+                </section>
+                <section>
+                    <h1>Show and Tell!</h1>
+                    <h2>Describe your thoughts, explain your code.</h2>
+                </section>
+                <section>
+                    <h1>Half time</h1>
+                    <img src="assets/images/oranges.png" alt="half time oranges"/>
+                </section>
+                <section>
+                    <h1>Doing Stuff</h1>
+                    <h2>(procedural programming)</h2>
                 </section>
             </div>
             <aside class="controls" style="display: block;">
