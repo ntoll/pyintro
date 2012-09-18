@@ -201,9 +201,9 @@
                     <h2>Dictionaries of keys & values</h2>
                     <pre class="big"><code class="python">
     >>> me = {
-    ... 'name': 'Nicholas Tollervey',
-    ... 'age': 39,
-    ... 'languages': ['Python', 'Javascript', 'C#', 'Visual Basic', 'Lisp']
+    ...   'name': 'Nicholas Tollervey',
+    ...   'age': 39,
+    ...   'languages': ['Python', 'Javascript', 'C#', 'Visual Basic']
     ... }
     >>> me['name']
     'Nicholas Tollervey'
@@ -241,6 +241,115 @@
                 <section>
                     <h1>Doing Stuff</h1>
                     <h2>(procedural programming)</h2>
+                    <pre class="big"><code class="python">
+    >>> 1+1
+    2
+    >>> 2-1
+    1
+    >>> 2*2
+    4
+    >>> 4/2
+    2
+    >>> 5/2
+    2
+    >>> 5.0/2
+    2.5
+                    </code></pre>
+                    <p>Simple mathematical functions.</p>
+                </section>
+                <section>
+                    <h2>Open an Editor</h2>
+                    <p>Now type the following:</p>
+                    <pre class="big"><code class="python">
+    #!/usr/bin/env python
+    """
+    A simple program to demonstrate flow.
+    """
+
+    while True:
+        name = raw_input('What is your name? ')
+        if len(name) &gt; 0:
+            print('Hello, %s' % name)
+            break
+        else:
+            print('Please try again.')
+                    </code></pre>
+                    <p>Can you work out what this does (and why)..?</p>
+                </section>
+                <section>
+                    <h2>Save your File</h2>
+                    <p>Now try the following:</p>
+                    <pre class="big"><code class="python">
+    $ python myfile.py
+    <span class="fragment">What is your name?</span>
+    <span class="fragment">Please try again.</span>
+    <span class="fragment">What is your name?</span> <span class="fragment">Eric</span>
+    <span class="fragment">Hello, Eric
+    $</span>
+                    </code></pre>
+                    <p>Running your file may result in error messages (if so
+                    re-open the file in the editor and check the source code).</p>
+                    <p>Did the program work as expected? How could you improve it? If you have time, experiment.</p>
+                </section>
+                <section>
+                    <h2>Loops</h2>
+                    <pre class="big"><code class="python">
+    >>> shopping = ['ham', 'eggs', 'milk', 'sugar', 'spam']
+    >>> for item in shopping:
+    ...     print(item)
+    ...
+    ham
+    eggs
+    milk
+    sugar
+    spam
+                    </code></pre>
+                    <p>How would you describe this code..?</p>
+                    <p class="fragment">For each item in the shopping list, print it!</p>
+                    <p class="fragment">Python loops over each thing in "shopping", calls it "item" then does something with that item (print it).</p>
+                </section>
+                <section>
+                    <h2>Functions</h2>
+                    <p>Functions are discreet blocks of code that do something
+                    (and give you back a result). Often you pass input
+                    "arguments" <b>in to</b> a function.</p>
+                    <pre class="big"><code class="python">
+    def hello(name='World'):
+        """
+        This function takes a name argument (that defaults to 'World')
+        and returns a greeting.
+        """
+        greeting = 'Hello, %s!' % name
+        return greeting
+
+    hello() # Hello, World!
+    hello('Eric') # Hello, Eric!
+                    </code></pre>
+                    <p>Can you tell what this function does? Do you see how to
+                    "call" the function? Can you make this function shorter?</p>
+                </section>
+                <section>
+                    <h2>Solo Exercise!</h2>
+                    <img src="assets/images/YouTwitFace.png" alt="YouTwitFace"/>
+                    <p>Create a function to nicely print out a user's record
+                    (from the first exercise). Next, write a second function
+                    that calls the first function to display a complete list
+                    of all the users.</p>
+                </section>
+                <section>
+                    <h2>Next Steps...</h2>
+                    <p>A huge number of resourced can be found here:</p>
+                    <p><a href="http://wiki.python.org/moin/BeginnersGuide/NonProgrammers">http://wiki.python.org/moin/BeginnersGuide/NonProgrammers</a></p>
+                    <p>Many videos and examples in Python here:</p>
+                    <p><a href="http://www.khanacademy.org/science/computer-science">http://www.khanacademy.org/science/computer-science</a></p>
+                    <p>Blog based course aimed at a younger audience:</p>
+                    <p><a href="https://python4kids.wordpress.com/getting-started/">https://python4kids.wordpress.com/getting-started/</a></p>
+                    <p>Join the <a href="http://mail.python.org/mailman/listinfo/python-uk">Python UK</a> mailing list.</p>
+                    <p>Ask questions in the <a href="http://webchat.freenode.net/?channels=python-uk">#python-uk channel on Freenode</a>.</p>
+                </section>
+                <section>
+                    <h1>End (the)</h1>
+                    <img src="assets/images/foot.png"/>
                 </section>
             </div>
             <aside class="controls" style="display: block;">
