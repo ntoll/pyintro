@@ -27,7 +27,7 @@
             <div class="slides">
                 <section>
                     <h1>Introducing Python</h1>
-                    <p><img src="assets/images/snakes.png"/></p>
+                    <p><img src="assets/images/snakes.png" /></p>
                     <p>
                         <i>
                             <small>Nicholas H.Tollervey</small>
@@ -72,7 +72,7 @@
                             </a>
                         </i>
                     </p>
-                    <script>
+                     <script>
                         if( navigator.userAgent.match( /(iPhone|iPad|iPod|Android)/i ) ) document.write( '<p style="color: rgba(0,0,0,0.3); text-shadow: none;">('+'Tap to navigate'+')</p>' );
                     </script>
                     <div class="footer">Press space to move forward, or use
@@ -80,9 +80,12 @@
                     use the up and down arrows. The compass on the right
                     shows available directions.</div>
                 </section>
+<!-- Slide 1 -->
                 <section>
                     <section>
                         <h1>Why Python..?</h1>
+                        <br />
+                        <br />
                         <ul>
                             <li class="fragment">Easy to learn</li>
                             <li class="fragment">Batteries included</li>
@@ -91,32 +94,43 @@
                             <li class="fragment">FUN!</li>
                         </ul>
                     </section>
+<!-- Slide 2 -->
                     <section>
-                        <h1>Plan for today...</h1>
+                        <h1>Plan for Today</h1>
+                        <br />
+                        <br />
                         <ol>
                             <li class="fragment">Representing Things (data structures)</li>
+                            <br />
                             <li class="fragment">Doing Stuff (procedural programming)</li>
                         </ol>
                     </section>
+<!-- Slide 3 -->
                     <section>
                         <h1>But first...</h1>
+                        <br />
                         <div class="fragment">
                             <h2>Who are you?</h2>
                             <ul>
                                 <li>Your name</li>
-                                <li>An interest</li>
+                                <li>A list of interests</li>
                             </ul>
                             <div>
-                            <br/>
-                            <h2>(Are we all set up..?)</h2>
                             </div>
+                        </div>
+                        <div class="fragment">
+                            <h2>(Are we all set up..?)</h2>
+                            <br/>
                         </div>
                     </section>
                 </section>
+<!-- Slide 4 -->
                 <section>
                     <h1>Representing Things</h1>
+                    <br />
                     <h2>(data structures)</h2>
                 </section>
+<!-- Slide 5 -->
                 <section>
                     <h2>Naming things</h2>
                     <pre class="big"><code contenteditable class="python">
@@ -136,12 +150,15 @@
                     <p>Use the equals (=) sign to assign a value to a
                     variable.</p>
                 </section>
+<!-- Slide 6 -->
                 <section>
                     <h2>Simple things</h2>
                     <pre class="big"><code class="python">
     # This is a comment (ignored by Python)
     'This is a string (of characters)'
     "This is also a string"
+    """And so
+    is this..."""
     # This is a number
     123456789
     # So is this...
@@ -158,6 +175,8 @@
                     <p>Try to assign some values to variables.</p>
                     <p>Just type in the name of the variable to see its value.</p>
                 </section>
+<!-- Slide 6 -->
+<!-- Slide 6 -->
                 <section>
                     <h2>Lists (of simple things)</h2>
                     <pre class="big"><code class="python">
@@ -181,6 +200,7 @@
                     <p>If you index the wrong thing you get an error.</p>
                     </div>
                 </section>
+<!-- Slide 7 -->
                 <section>
                     <h2>Lists Can Contain Anything</h2>
                     <pre class="big"><code class="python">
@@ -189,7 +209,11 @@
     ['foo', 1.234, False, ['hello', 'world']]
     >>> random_junk[0]
     'foo'
+    >>> random_junk[1:3]    # a slice of the list -> another list
+    [1.234, False]
     >>> random_junk[3]
+    ['hello', 'world']
+    >>> random_junk[-1]     # a negative index wraps
     ['hello', 'world']
     >>> random_junk[3][0]
     ???
@@ -197,13 +221,14 @@
                     <p>Create a wish list of birthday presents.</p>
                     <p>(Try to get specific items from the list.)</p>
                 </section>
+<!-- Slide 8 -->
                 <section>
                     <h2>Dictionaries of keys & values</h2>
                     <pre class="big"><code class="python">
     >>> me = {
     ...   'name': 'Nicholas Tollervey',
-    ...   'age': 39,
-    ...   'languages': ['Python', 'Javascript', 'C#', 'Visual Basic']
+    ...   'age': 3 * 13, # we can assign values using expressions
+    ...   'languages': ['Python', 'Javascript', 'C#', 'Lisp']
     ... }
     >>> me['name']
     'Nicholas Tollervey'
@@ -215,29 +240,33 @@
                     <p>A "dict" contains named attributes. Reference each
                     attribute by its key to get the associated value. Create
                     a dict that represents <em>you</em> (don't just use the
-                    attributes that I do).</p>
+                    attributes that I have).</p>
                 </section>
+<!-- Slide 8 -->
                 <section>
                     <h2>Solo Exercise!</h2>
                     <img src="assets/images/YouTwitFace.png" alt="YouTwitFace"/>
                     <p>We're building a new social network! We need
-                    you to work out how to represent its members/users:</p>
+                    you to work out how to represent its members:</p>
                     <ul>
-                        <li>Decide a simple dict schema to represent users (name, age etc).</li>
+                        <li>Decide a simple dict schema to represent members (name, age, interests etc).</li>
                         <li>Create a handful of members using this schema.</li>
                         <li>Add these members to a list.</li>
                     </ul>
                     &nbsp;<br/>
                     <p>Discuss with your neighbours, ask for help and experiment!</p>
                 </section>
+<!-- Slide 9 -->
                 <section>
                     <h1>Show and Tell!</h1>
                     <h2>Describe your thoughts, explain your code.</h2>
                 </section>
+<!-- Slide 10 -->
                 <section>
                     <h1>Half time</h1>
                     <img src="assets/images/oranges.png" alt="half time oranges"/>
                 </section>
+<!-- Slide 11 -->
                 <section>
                     <h1>Doing Stuff</h1>
                     <h2>(procedural programming)</h2>
@@ -257,6 +286,7 @@
                     </code></pre>
                     <p>Simple mathematical functions.</p>
                 </section>
+<!-- Slide 11 -->
                 <section>
                     <h2>Open an Editor</h2>
                     <p>Now type the following:</p>
@@ -276,6 +306,7 @@
                     </code></pre>
                     <p>Can you work out what this does (and why)..?</p>
                 </section>
+<!-- Slide 12 -->
                 <section>
                     <h2>Save your File</h2>
                     <p>Now try the following:</p>
@@ -291,6 +322,7 @@
                     re-open the file in the editor and check the source code).</p>
                     <p>Did the program work as expected? How could you improve it? If you have time, experiment.</p>
                 </section>
+<!-- Slide 13 -->
                 <section>
                     <h2>Loops</h2>
                     <pre class="big"><code class="python">
@@ -308,16 +340,30 @@
                     <p class="fragment">For each item in the shopping list, print it!</p>
                     <p class="fragment">Python loops over each thing in "shopping", calls it "item" then does something with that item (print it).</p>
                 </section>
-                <section>
-                    <h2>Functions</h2>
-                    <p>Functions are discreet blocks of code that do something
-                    (and give you back a result). Often you pass input
-                    "arguments" <b>in to</b> a function.</p>
-                    <pre class="big"><code class="python">
+<!-- Slide 14 -->
+        <section>
+            <h2>Functions</h2>
+            <ul>
+              <li class="fragment">Functions perform <b>Actions</b> on <b>Data</b> and return <b>Results</b>.</li>
+              <li class="fragment">They are the basic units of re-usable code.</li>
+              <li class="fragment">Use them for frequently-needed tasks.</li>
+              <li class="fragment">Functions are fundamental to <b>lazy</b> programming.</li>
+              <li class="fragment">Laziness is a virtue in programmers :-)</li>
+              <li class="fragment">Libraries of functions can provide common, <b>tested</b> solutions to frequent problems.</li>
+              <li class="fragment">In Python, the <b>Standard Library</b> contains many such functions.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Functions</h2>
+            <p>Functions are discreet blocks of code that do something
+            (and give you back a result). Often you pass input
+            "arguments" <b>in to</b> a function.</p>
+            <pre class="big"><code class="python">
     def hello(name='World'):
         """
         This function takes a name argument (that defaults to 'World')
-        and returns a greeting.
+        and returns a greeting. The arguments can be positional or named.
+        If named they can be given default values, and become optional.
         """
         greeting = 'Hello, %s!' % name
         return greeting
@@ -327,7 +373,8 @@
                     </code></pre>
                     <p>Can you tell what this function does? Do you see how to
                     "call" the function? Can you make this function shorter?</p>
-                </section>
+        </section>
+<!-- Slide 15 -->
                 <section>
                     <h2>Solo Exercise!</h2>
                     <img src="assets/images/YouTwitFace.png" alt="YouTwitFace"/>
@@ -336,16 +383,19 @@
                     that calls the first function to display a complete list
                     of all the users.</p>
                 </section>
+<!-- Slide 16 -->
                 <section>
                     <h2>Next Steps...</h2>
-                    <p>A huge number of resourced can be found here:</p>
+                    <p>A huge number of resources can be found here:</p>
                     <p><a href="http://wiki.python.org/moin/BeginnersGuide/NonProgrammers">http://wiki.python.org/moin/BeginnersGuide/NonProgrammers</a></p>
-                    <p>Many videos and examples in Python here:</p>
+                    <p>Many videos and Python examples here:</p>
                     <p><a href="http://www.khanacademy.org/science/computer-science">http://www.khanacademy.org/science/computer-science</a></p>
                     <p>Blog based course aimed at a younger audience:</p>
                     <p><a href="https://python4kids.wordpress.com/getting-started/">https://python4kids.wordpress.com/getting-started/</a></p>
                     <p>Join the <a href="http://mail.python.org/mailman/listinfo/python-uk">Python UK</a> mailing list.</p>
                     <p>Ask questions in the <a href="http://webchat.freenode.net/?channels=python-uk">#python-uk channel on Freenode</a>.</p>
+                    <p>Come to the <a href="http://pyconuk.org">PyCon UK</a> conference.</p>
+                    <p>Join <a href="http://test.pywm.eu">PyWM</a> our local User Group.</p>
                 </section>
                 <section>
                     <h1>End (the)</h1>
